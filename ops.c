@@ -97,6 +97,8 @@ void free_stck(stack_t *stack)
 	}
 }
 
+
+typedef void (op_func_t)(stack_t*, unsigned int);
 /**
  * get_op - get op
  * @op_f: str
@@ -104,7 +106,7 @@ void free_stck(stack_t *stack)
  * @stak: stack
  * Return: func
  */
-void (*get_op(char *op_f, unsigned int l, stack_t **stak))(stack_t**, unsigned int)
+op_func_t get_op(char *op_f, unsigned int l, stack_t **stak);
 {
 	int count;
 
