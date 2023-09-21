@@ -106,7 +106,7 @@ typedef void (*op_func_t)(stack_t*, unsigned int);
  * @stak: stack
  * Return: func
  */
-op_func_t get_op(char *op_f, unsigned int l, stack_t **s);
+op_func_t get_op(char *op_f, unsigned int l, stack_t **stak)
 {
 	int count;
 

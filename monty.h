@@ -40,7 +40,7 @@ extern FILE *file;
 FILE *file;
 
 void (*op_func)(stack_t **, unsigned int);
-void (*get_op(char *op_f, unsigned int l, stack_t **s))(stack_t**, unsigned int);
+void (*get_op(char *op_f, unsigned int l, stack_t **))(stack_t**, unsigned int);
 void _notin(stack_t **stack, unsigned int line_number);
 int isnumber(char *);
 void free_stck(stack_t *);
