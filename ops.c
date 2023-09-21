@@ -98,7 +98,7 @@ void free_stck(stack_t *stack)
 }
 
 
-typedef void (op_func_t)(stack_t*, unsigned int);
+typedef void (*op_func_t) (stack_t*, unsigned int);
 /**
  * get_op - get op
  * @op_f: str
